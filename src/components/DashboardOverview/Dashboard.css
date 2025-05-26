@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 50%;
+  width: 40%;
 }
 
 /* Search Bar */
@@ -115,7 +115,13 @@
   flex-direction: column;
   align-items: center;
 }
-
+.body-image-wrapper{
+  position: relative;
+  width: 100%;
+  background-color:#f6faff ;
+  overflow: hidden;
+  border-radius: 2rem;
+}
 .tooltip {
   /* position: absolute;
   bottom: 100%; /* Place above the dot */

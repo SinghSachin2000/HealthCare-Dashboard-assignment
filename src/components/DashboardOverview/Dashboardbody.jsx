@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Dashboard.css";
-import bodyImage from "../../assets/frontbody.png";
+import bodyImage from "../../assets/frontbody2.jpg";
 import healthStatus from "../../data/healthIndicators";
 import HealthStatusCard from "./HealthStatusCard";
 import healthData from "../../data/healthCards";
@@ -17,7 +17,9 @@ const Dashboardbody = () => {
           <div className="dashboard-heading">Dashboard </div>
           <div className="anatomy-section">
             <div className="image-container">
+              <div className="body-image-wrapper">
               <img src={bodyImage} alt="Human Body" className="body-image" />
+              </div>
               {healthStatus.map((part) => (
                 <div
                   key={part.id}
