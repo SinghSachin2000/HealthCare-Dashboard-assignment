@@ -1,0 +1,234 @@
+
+
+.calendar-header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schedule-section {
+    padding: 32px;
+    background-color: #f6faff;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+    font-family: 'Segoe UI', sans-serif;
+    height: 95vh;
+    width: 40%;
+  }
+  
+  .appointments-list {
+    display: flex;
+    gap: 24px;
+    margin: 32px 0;
+    flex-wrap: wrap;
+  }
+  
+  .upcoming-schedule-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1f1f47;
+    margin: 36px 0 20px;
+  }
+  
+  /* ScheduleCalendar.css */
+  .calendar-container {
+    margin-bottom: 36px;
+  }
+  
+  .calendar-header {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1f1f47;
+  }
+  
+  .calendar-grid {
+    display: flex;
+    color: #3734a9;
+    gap: 16px;
+  }
+  
+  .day-column {
+    background: #f9faff;
+    padding: 16px;
+    border-radius: 20px;
+    flex: 1;
+    color: #3734a9;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  }
+  
+  .day-column.active {
+    background-color: #e1e7ff;
+    color: #3734a9;
+  }
+  
+  .day {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #1f1f47;
+  }
+  
+  .date {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #1f1f47;
+  }
+  
+  .slot {
+    background-color: #f0f1f5;
+    border-radius: 8px;
+    margin: 6px 0;
+    padding: 6px;
+    font-size: 13px;
+    color: #333;
+  }
+  
+  .slot.selected {
+    background-color: #3734a9;
+    color: #fff;
+  }
+  
+  /* AppointmentCard.css */
+  .appointment-card {
+    background-color: #e8ebfb;
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1;
+    min-width: 240px;
+    max-width: 300px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  }
+  
+  .appointment-card.highlight {
+    background-color: #3734a9;
+    color: #fff;
+  }
+  
+  .appointment-card .type {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .appointment-card .details {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .appointment-card.highlight .details {
+    color: #ffffffcc;
+  }
+  
+  /* ScheduleGroup.css */
+  .schedule-group {
+    margin-bottom: 32px;
+  }
+  
+  .group-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #9a9aaa;
+  }
+  
+  .group-cards {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .type{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .add-icon{
+    font-size:4rem;
+    color: #3734a9;
+  }
+  .profile-photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  .schedule-profile{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 10px;
+  }
+
+
+  /* Mobile-first responsive tweaks */
+@media (max-width: 1500px) {
+    .schedule-section {
+      width: 100%;
+      border-radius: 2rem;
+      padding: 20px;
+      height: auto;
+    }
+  
+    .appointments-list {
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .calendar-grid {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .group-cards {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .calendar-header-container {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  
+    .schedule-profile {
+      flex-direction: row;
+    }
+  }
+  
+  /* Devices <= 480px (phones) */
+  @media (max-width: 1500px) {
+    .schedule-section {
+      padding: 16px;
+    }
+  
+    .calendar-header {
+      font-size: 18px;
+    }
+  
+    .upcoming-schedule-title {
+      font-size: 18px;
+    }
+  
+    .appointment-card {
+      min-width: 100%;
+      padding: 16px;
+    }
+  
+    .profile-photo {
+      width: 33px;
+      height: 33px;
+    }
+  
+    .add-icon {
+      font-size: 2.5rem;
+    }
+  
+    .calendar-header-container {
+      gap: 8px;
+    }
+  }
+  
