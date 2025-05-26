@@ -130,6 +130,9 @@
   border: 1px solid black;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
   opacity: 1; 
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 .details-header{
   font-size: 16px;
