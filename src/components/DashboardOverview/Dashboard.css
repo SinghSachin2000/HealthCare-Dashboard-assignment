@@ -231,7 +231,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 220px;
+  gap: 12px;
+  height: auto; 
   overflow: hidden;
 }
 
@@ -260,11 +261,15 @@
 
 .chart-wrapper {
   width: 100%;
-  flex: 1;
-  min-height: 140px;
-  max-height: 140px;
+  height: 140px;  /* Only this */
+  overflow: hidden;
 }
-
+.ResponsiveContainer{
+  overflow-y: hidden;
+}
+.barchart{
+  overflow-y: hidden;
+}
 @media screen and (max-width: 1500px) {
   .mandashboardsection {
     width: 100%;
@@ -307,11 +312,13 @@
 
   .activity-container {
     height: auto;
+    padding: 20px;
+
   }
 
   .chart-wrapper {
-    min-height: 120px;
-    max-height: 140px;
+    height: 160px; 
+    overflow-y: hidden;
   }
 
 
