@@ -9,6 +9,7 @@ import {
 } from "recharts";
 import "./Dashboard.css";
 import ActivityData from "../../data/activityData";
+import { CgOverflow } from "react-icons/cg";
 
 
 const CustomBar = (props) => {
@@ -46,46 +47,46 @@ const ActivityChart = () => {
         <span className="activity-subtext">3 appointments this week</span>
       </div>
       <div className="chart-wrapper">
-        <ResponsiveContainer width="100%" height="100%">
-          <BarChart
-            className="activity-chartres"
-            data={ActivityData}
-            barCategoryGap={12}
-            margin={{ top: 0, right: 0, bottom: 0, left: 0 }} // <== prevent excess spacing
-          >
-            <XAxis
-              dataKey="name"
-              tick={{ fontSize: 12 }}
-              axisLine={false}
-              tickLine={false}
-            />
-            <Tooltip
-              cursor={{ fill: "#f0f0f0" }}
-              contentStyle={{ fontSize: "12px", borderRadius: "8px" }}
-            />
-            <Bar
-              dataKey="teal"
-              stackId="a"
-              fill="#00D1FF"
-              radius={[6, 6, 0, 0]}
-              barSize={6}
-            />
-            <Bar
-              dataKey="gray"
-              stackId="a"
-              fill="#d8d8d8"
-              radius={[6, 6, 0, 0]}
-              barSize={6}
-            />
-            <Bar
-              dataKey="blue"
-              stackId="a"
-              fill="#6D6AFE"
-              radius={[6, 6, 0, 0]}
-              barSize={6}
-            />
-          </BarChart>
-        </ResponsiveContainer>
+      <ResponsiveContainer width="100%" height={120} > {/* Previously 100% */}
+  <BarChart
+    data={ActivityData}
+    barCategoryGap={12}
+    margin={{ top: 0, right: 0, bottom: 0, left: 0 }}
+  >
+    <XAxis
+      dataKey="name"
+      tick={{ fontSize: 12 }}
+      axisLine={false}
+      tickLine={false}
+    />
+    <Tooltip
+      cursor={{ fill: "#f0f0f0" }}
+      contentStyle={{ fontSize: "12px", borderRadius: "8px" }}
+    />
+    <Bar
+      dataKey="teal"
+      stackId="a"
+      fill="#00D1FF"
+      radius={[6, 6, 0, 0]}
+      barSize={6}
+    />
+    <Bar
+      dataKey="gray"
+      stackId="a"
+      fill="#d8d8d8"
+      radius={[6, 6, 0, 0]}
+      barSize={6}
+    />
+    <Bar
+      dataKey="blue"
+      stackId="a"
+      fill="#6D6AFE"
+      radius={[6, 6, 0, 0]}
+      barSize={6}
+    />
+  </BarChart>
+</ResponsiveContainer>
+
       </div>
     </div>
   );

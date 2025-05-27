@@ -363,3 +363,25 @@
     font-size: 2.5rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .activity-container {
+    height:fit-content;
+    padding: 20px;
+    overflow-y: hidden;
+  }
+
+  .chart-wrapper {
+    min-height: 180px;
+    overflow-y: hidden;
+    max-height: 200px;
+  }
+
+  .activity-title {
+    font-size: 16px;
+  }
+
+  .activity-subtext {
+    font-size: 11px;
+  }
+}
